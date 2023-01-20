@@ -1,3 +1,3 @@
-<template src="./template.html"></template>
-<style src="./style.css"></style>
-<script src="./script.ts"></script>
+<template src="./barraLateral.html"></template>
+<style src="./barraLateral.css"></style>
+<script src="./barraLateral.ts"></script>
