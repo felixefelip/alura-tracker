@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BarraLateral from './components/BarraLateral.vue'
+import BarraLateral from './components/barraLateral/BarraLateral.vue'
 import MeuFormulario from './components/MeuFormulario.vue'
 
 export default defineComponent({
