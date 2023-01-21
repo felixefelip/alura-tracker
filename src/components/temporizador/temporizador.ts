@@ -1,11 +1,13 @@
 import { defineComponent } from 'vue'
+import Botao from '../botao/Botao.vue'
 import Cronometro from '../cronometro/Cronometro.vue'
 
 export default defineComponent({
   name: 'MeuFormulario',
   emits: ['aoTemporizadorFinalizado'],
   components: {
-    Cronometro
+    Cronometro,
+    Botao
   },
   data () {
     return {
