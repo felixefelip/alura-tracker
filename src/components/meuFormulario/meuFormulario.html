@@ -6,15 +6,15 @@
     <div class="column">
       <div class="is-flex is-align-items-center is-justify-content-space-between">
         <section>
-          <strong>00:00:00</strong>
+          <strong>{{ tempoDecorrigo }}</strong>
         </section>
-        <button class="button">
+        <button class="button" @click="iniciar">
           <span class="icon">
             <i class="fas fa-play"></i>
           </span>
           <span>play</span>
         </button>
-        <button class="button">
+        <button class="button" @click="finalizar">
           <span class="icon">
             <i class="fas fa-stop"></i>
           </span>
