@@ -5,11 +5,11 @@ export default defineComponent({
   props: {
     text: {
       type: String,
-      default: ''
+      required: true
     },
     icon: {
       type: String,
-      default: ''
+      required: true
     }
   }
 })
