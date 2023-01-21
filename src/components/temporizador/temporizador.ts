@@ -3,6 +3,7 @@ import Cronometro from '../cronometro/Cronometro.vue'
 
 export default defineComponent({
   name: 'MeuFormulario',
+  emits: ['aoTemporizadorFinalizado'],
   components: {
     Cronometro
   },
@@ -16,15 +17,15 @@ export default defineComponent({
   methods: {
     iniciar () {
       this.cronometroRodando = true
-
       this.cronometro = setInterval(() => {
         this.tempoEmSegundos += 1
       }, 1000)
     },
     finalizar () {
       this.cronometroRodando = false
-
       clearInterval(this.cronometro)
+      this.$emit('aoTemporizadorFinalizado', this.tempoEmSegundos)
+      this.tempoEmSegundos = 0
     }
   }
 })
