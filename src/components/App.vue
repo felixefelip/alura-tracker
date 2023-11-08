@@ -4,13 +4,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import BarraLateral from './barraLateral/BarraLateral.vue'
-import MeuFormulario from './meuFormulario/MeuFormulario.vue'
+import Formulario from './formulario/Formulario.vue'
 
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
-    MeuFormulario
+    Formulario
   }
 })
 </script>

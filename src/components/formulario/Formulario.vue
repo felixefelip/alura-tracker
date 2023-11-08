@@ -1,12 +1,12 @@
-<template src="./meuFormulario.html"></template>
-<style src="./meuFormulario.css"></style>
+<template src="./formulario.html"></template>
+<style src="./formulario.css"></style>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Temporizador from '../temporizador/Temporizador.vue'
 
 export default defineComponent({
-  name: 'MeuFormulario',
+  name: 'Formulario',
   components: {
     Temporizador
   },
