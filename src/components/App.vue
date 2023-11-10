@@ -5,12 +5,14 @@
 import { defineComponent } from 'vue'
 import BarraLateral from './barraLateral/BarraLateral.vue'
 import Formulario from './formulario/Formulario.vue'
+import Tarefa from './tarefa/Tarefa.vue'
 
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
-    Formulario
+    Formulario,
+    Tarefa
   }
 })
 </script>
