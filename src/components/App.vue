@@ -7,17 +7,24 @@ import BarraLateral from './barraLateral/BarraLateral.vue'
 import Formulario from './formulario/Formulario.vue'
 import Tarefa from './tarefa/Tarefa.vue'
 import ITarefa from '../interfaces/ITarefa'
+import Box from './box/Box.vue'
 
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
     Formulario,
-    Tarefa
+    Tarefa,
+    Box
   },
   data () {
     return {
       tarefas: [] as ITarefa[]
+    }
+  },
+  computed: {
+    listaEstaVazia(): boolean {
+      return this.tarefas.length === 0
     }
   },
   methods: {
