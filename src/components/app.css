@@ -1,3 +1,17 @@
 .lista {
     padding: 1.25rem;
 }
+
+main {
+    --bg-primaro: #fff;
+    --texto-primario: #000;
+}
+
+main.modo-escuro {
+    --bg-primaro: #2b2d42;
+    --texto-primario: #ddd;
+}
+
+.conteudo {
+    background-color: var(--bg-primaro);
+}

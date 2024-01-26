@@ -1,5 +1,5 @@
 <template src="./cronometro.html"></template>
-<style src="./cronometro.css"></style>
+<style src="./cronometro.css" scoped></style>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
